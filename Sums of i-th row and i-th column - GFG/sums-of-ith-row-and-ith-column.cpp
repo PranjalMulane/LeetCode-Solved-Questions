@@ -13,18 +13,17 @@ class Solution {
         int rowSum=0, colSum=0; 
         int flag=0;
         for(int i=0; i<N; i++){
-
             for(int j=0; j<M;j++){
                 rowSum += A[i][0];
                 colSum += A[0][j];
             }
         }
-        if( rowSum == colSum){
+        if( rowSum == colSum)
             flag = 1;
-        }
-        else{
+        
+        else
             flag = 0;
-        }
+        
         return flag;
     }
 };
