@@ -9,30 +9,22 @@ public:
                 command[i]= 'o';
                 command[i+1]=' ';
                 ans=command;
-                
             }
             else{
                if(command[i] == '(' && command[i+1] != ')')
                {
                    command[i] = ' ';
-                   ans=command;
-                   
-               }
+                   ans=command;}
                 else if(command[i] == ')' && (command[i+1] != ')' || command[i+1]== '(')){
                     command[i] = ' ';
-                   ans=command;
-                }
+                    ans=command;}
                 else if(command[s] == '(' || command[s] == ')') {
-            
-                    ans = command;
-                }
+                    ans = command;}
                 else{
-                    ans=command;
-                }
-            
+                    ans=command;}
             }
         }
-         ans.erase(remove(ans.begin(), ans.end(), ' '), ans.end());
+        ans.erase(remove(ans.begin(), ans.end(), ' '), ans.end());
         return ans;
     }
           
