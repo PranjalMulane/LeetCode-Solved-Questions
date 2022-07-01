@@ -7,9 +7,6 @@ public:
         int end = n-1;
         int first = -1;
         int last = -1;
-        
-        
-        
         while(start<= end){
             int mid = start + ((end-start)/2);
             if( target < nums[mid]){
@@ -43,3 +40,8 @@ public:
     return {first,last};
     }
 };
+
+
+
+
+
