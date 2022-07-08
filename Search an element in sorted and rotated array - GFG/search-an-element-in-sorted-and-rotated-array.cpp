@@ -29,19 +29,16 @@ int main(){
          
     }
 }// } Driver Code Ends
-
-
 //User function template for C++
-
 // vec : given vector of elements
 // K : given value whose index we need to find 
+        
 int Search(vector<int> vec, int K) {
     //code here
     int n = vec.size();
     int l=0;
     int h=n-1;
-    
-    while(l<=h){
+        while(l<=h){
         int mid = l + ((h-l)/2);
         
         if( vec[mid] == K){
@@ -59,9 +56,9 @@ int Search(vector<int> vec, int K) {
             } else{
                 h=mid-1;
             }
-            
         }
-        
     }
     return -1;
 }
+
+
