@@ -32,7 +32,6 @@ int main(){
 //User function template for C++
 // vec : given vector of elements
 // K : given value whose index we need to find 
-        
 int Search(vector<int> vec, int K) {
     //code here
     int n = vec.size();
