@@ -17,7 +17,7 @@ int peakElement(int arr[], int n)
    while(l<=h){
        mid = l + ((h-l)/2);
        
-       if((mid == 0 ||arr[mid-1] <= arr[mid]) && (mid == n-1||arr[mid+1] <=arr[mid])){
+       if((mid == 0 || arr[mid-1] <= arr[mid]) && (mid == n-1||arr[mid+1] <=arr[mid])){
            return mid;
        }
        
