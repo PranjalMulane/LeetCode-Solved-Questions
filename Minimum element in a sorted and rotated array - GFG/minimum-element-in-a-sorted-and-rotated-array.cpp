@@ -13,7 +13,7 @@ public:
         while(l<=h){
             mid = l + (h-l)/2;
             
-            if(arr[mid-1] > arr[mid]){
+            if(mid==0 || arr[mid-1] > arr[mid]){
                 return arr[mid];
             }
             if(arr[l] > arr[mid]){
